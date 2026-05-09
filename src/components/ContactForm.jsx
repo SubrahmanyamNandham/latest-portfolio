@@ -23,7 +23,7 @@ function ContactForm() {
             {[
               { icon: <Mail size={16} />, label: "Email", value: "subrahmanyam.nandham@gmail.com", href: "mailto:subrahmanyam.nandham@gmail.com" },
               { icon: <Phone size={16} />, label: "Phone", value: "+91 89192 90366", href: "tel:+918919290366" },
-              { icon: <Linkedin size={16} />, label: "LinkedIn", value: "balasubrahmanyam-nandham", href: "https://linkedin.com/in/balasubrahmanyam-nandham" },
+              { icon: <Linkedin size={16} />, label: "LinkedIn", value: "balasubrahmanyam-nandham", href: "https://www.linkedin.com/in/balasubrahmanyam-nandham-859968155/" },
               { icon: <Github size={16} />, label: "GitHub", value: "SubrahmanyamNandham", href: "https://github.com/SubrahmanyamNandham" },
             ].map(({ icon, label, value, href }) => (
               <a key={label} href={href} target="_blank" rel="noopener noreferrer"
