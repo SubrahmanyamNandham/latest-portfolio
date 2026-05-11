@@ -66,11 +66,12 @@ const AboutExperience = () => {
         <div className="bg-white/5 border border-white/10 rounded-2xl p-6 w-full md:w-5/12 flex flex-col">
           <h3 className="text-xl font-bold text-white mb-4">About Me</h3>
           <p className="text-gray-400 text-sm leading-relaxed mb-5">
-           Started as an electrical engineer — trained to think in systems, not just code. Pivoted into software through two years of technical recruiting, where I saw exactly what separates engineers who build from engineers who just talk. Bet on myself. Retrained. Never looked back.
-           Today I build backend-heavy, production-grade systems — SAP integrations, data pipelines, GraphQL APIs — with a sharp eye for performance and reliability
+           I’m a Full Stack Engineer focused on building scalable, high-performance systems and delivering products that create measurable impact. Over the past 2.5+ years, I’ve worked across engineering teams at upGrad (Fynd) and AeroSimple, contributing to production-grade applications used in real-world operational environments.
+           My experience spans frontend engineering, backend architecture, databases, and cloud-native infrastructure. I’ve built responsive React.js applications, designed secure and scalable Node.js services, integrated enterprise systems like SAP, and optimized deployment workflows using Docker, Kubernetes, and CI/CD pipelines.
+           I enjoy solving complex engineering problems with clean, maintainable solutions. Whether it’s improving application performance, designing GraphQL APIs, debugging large-scale state management issues, or building RBAC-secured systems handling high-volume data, I focus on writing reliable software that scales with both users and teams.
           </p>
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
-            Passionate about microservices, data pipelines, and developer productivity through AI tooling. Currently exploring LLM integrations and workflow automation.
+            Currently, I’m exploring AI/ML, LLMs, and agentic systems to expand my understanding of intelligent applications and next-generation software systems. I’m looking for opportunities to work on ambitious products alongside strong engineering teams that value technical excellence, ownership, and continuous learning.
           </p>
 
           <h4 className="text-sm font-semibold text-gray-300 mb-3 tracking-wide uppercase">Tech Stack</h4>
