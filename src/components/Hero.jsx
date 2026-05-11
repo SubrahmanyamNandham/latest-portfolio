@@ -57,7 +57,7 @@ const Hero = () => {
           </span>
         </h1>
         <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-          Backend-focused Full Stack Engineer with 2.5+ years building scalable, high-performance applications.
+          Full Stack Engineer with 2.5+ years building scalable, high-performance applications.
           Specialising in React.js, Node.js, PostgreSQL, NoSQL — and shipping systems that serve <span className="text-white font-medium">50K+ users</span>.
         </p>
 
