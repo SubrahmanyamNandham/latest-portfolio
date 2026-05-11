@@ -66,7 +66,8 @@ const AboutExperience = () => {
         <div className="bg-white/5 border border-white/10 rounded-2xl p-6 w-full md:w-5/12 flex flex-col">
           <h3 className="text-xl font-bold text-white mb-4">About Me</h3>
           <p className="text-gray-400 text-sm leading-relaxed mb-5">
-            B.Tech in Electrical & Electronics Engineering from KIET (JNTUK), certified in Full-Stack Development by Nxtwave and Meta (via Coursera). I build backend-heavy, production-grade systems — from SAP integrations to AI-powered apps — with a keen eye for performance and reliability.
+           Started as an electrical engineer — trained to think in systems, not just code. Pivoted into software through two years of technical recruiting, where I saw exactly what separates engineers who build from engineers who just talk. Bet on myself. Retrained. Never looked back.
+           Today I build backend-heavy, production-grade systems — SAP integrations, data pipelines, GraphQL APIs — with a sharp eye for performance and reliability
           </p>
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
             Passionate about microservices, data pipelines, and developer productivity through AI tooling. Currently exploring LLM integrations and workflow automation.
