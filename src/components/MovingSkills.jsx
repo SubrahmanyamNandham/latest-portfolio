@@ -5,21 +5,31 @@ import {
   SiMongodb,
   SiFastapi,
   SiPostgresql,
+  SiMysql,
   SiExpress,
   SiNestjs,
   SiNextdotjs,
   SiTypescript,
   SiSocketdotio,
   SiRedis,
+  SiReact,
+  SiNodedotjs,
   SiDocker,
   SiKubernetes,
   SiLangchain,
-  SiSupabase
+  SiJavascript,
+  SiSupabase,
+  SiPrisma,
+  SiPostman,
+  SiJest,
+  SiGitlab,
+  SiGithubactions,
+  SiGraphql,
+  SiMui,
+  SiGit,
 } from "react-icons/si";
 
-import {
-  FaPython,FaPlay,FaBrain,FaAws
-} from "react-icons/fa";
+import { FaPython, FaPlay, FaBrain, FaAws } from "react-icons/fa";
 
 import { LuDatabase } from "react-icons/lu";
 
@@ -28,7 +38,6 @@ const skillsWithIcons = [
   { name: "LangChain", icon: <SiLangchain /> },
   { name: "LangGraph", icon: <SiLangchain /> },
   { name: "OpenAI", icon: <FaBrain /> },
-  { name: "Gemini", icon: <SiGooglegemini /> },
   { name: "Qdrant", icon: <LuDatabase /> },
   { name: "pgvector", icon: <SiPostgresql /> },
 
@@ -52,14 +61,13 @@ const skillsWithIcons = [
   { name: "MySQL", icon: <SiMysql /> },
   { name: "Redis", icon: <SiRedis /> },
   { name: "Prisma", icon: <SiPrisma /> },
+  { name: "Supabase", icon: <SiSupabase /> },
 
   { name: "Docker", icon: <SiDocker /> },
-  { name: "AWS", icon: <SiAmazonaws /> },
   { name: "Kubernetes", icon: <SiKubernetes /> },
-  { name: "AWS", icon: <FaAws/> },
+  { name: "AWS", icon: <FaAws /> },
   { name: "GitHub Actions", icon: <SiGithubactions /> },
   { name: "GitLab CI/CD", icon: <SiGitlab /> },
-  { name: "Supabase", icon: <SiSupabase /> },
   { name: "Jest", icon: <SiJest /> },
   { name: "Playwright", icon: <FaPlay /> },
   { name: "Postman", icon: <SiPostman /> },
