@@ -1,24 +1,33 @@
 import React from "react";
 import {
-  // Languages & frontend
-  SiReact, SiRedux, SiJavascript, SiTypescript, SiTailwindcss, SiNextdotjs, SiMui,
-  // Backend
-  SiNodedotjs, SiExpress, SiNestjs, SiFastapi, SiGraphql, SiSocketdotio,
-  // Databases
-  SiPostgresql, SiMongodb, SiMysql, SiRedis, SiPrisma,
-  // AI / GenAI
-  SiLangchain, SiOpenai, SiAnthropic, SiGooglegemini,
-  // DevOps & tools
-  SiDocker, SiKubernetes, SiAmazon, SiGithubactions, SiGitlab, SiGit,
-  SiJest, SiPlaywright, SiPostman, SiPython,
+  SiTailwindcss,
+  SiRedux,
+  SiMongodb,
+  SiFastapi,
+  SiPostgresql,
+  SiExpress,
+  SiNestjs,
+  SiNextdotjs,
+  SiTypescript,
+  SiSocketdotio,
+  SiRedis,
+  SiDocker,
+  SiKubernetes,
+  SiLangchain,
+  SiSupabase
 } from "react-icons/si";
+
+import {
+  FaPython,FaPlay,FaBrain,FaAws
+} from "react-icons/fa";
+
 import { LuDatabase } from "react-icons/lu";
 
 const skillsWithIcons = [
   // AI first, since it's the current focus
   { name: "LangChain", icon: <SiLangchain /> },
   { name: "LangGraph", icon: <SiLangchain /> },
-  { name: "OpenAI", icon: <SiOpenai /> },
+  { name: "OpenAI", icon: <FaBrain /> },
   { name: "Claude", icon: <SiAnthropic /> },
   { name: "Gemini", icon: <SiGooglegemini /> },
   { name: "Qdrant", icon: <LuDatabase /> },
@@ -27,7 +36,7 @@ const skillsWithIcons = [
   { name: "React.js", icon: <SiReact /> },
   { name: "TypeScript", icon: <SiTypescript /> },
   { name: "JavaScript", icon: <SiJavascript /> },
-  { name: "Python", icon: <SiPython /> },
+  { name: "Python", icon: <FaPython /> },
   { name: "Node.js", icon: <SiNodedotjs /> },
   { name: "NestJS", icon: <SiNestjs /> },
   { name: "FastAPI", icon: <SiFastapi /> },
@@ -46,12 +55,14 @@ const skillsWithIcons = [
   { name: "Prisma", icon: <SiPrisma /> },
 
   { name: "Docker", icon: <SiDocker /> },
+  { name: "AWS", icon: <SiAmazonaws /> },
   { name: "Kubernetes", icon: <SiKubernetes /> },
-  { name: "AWS", icon: <SiAmazon /> },
+  { name: "AWS", icon: <FaAws/> },
   { name: "GitHub Actions", icon: <SiGithubactions /> },
   { name: "GitLab CI/CD", icon: <SiGitlab /> },
+  { name: "Supabase", icon: <SiSupabase /> },
   { name: "Jest", icon: <SiJest /> },
-  { name: "Playwright", icon: <SiPlaywright /> },
+  { name: "Playwright", icon: <FaPlay /> },
   { name: "Postman", icon: <SiPostman /> },
   { name: "Git", icon: <SiGit /> },
 ];

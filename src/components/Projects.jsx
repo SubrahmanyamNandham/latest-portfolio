@@ -1,10 +1,10 @@
 import { LuGithub, LuDatabase } from "react-icons/lu";
 import { CiPlay1 } from "react-icons/ci";
-import { FaReact, FaNodeJs, FaPython } from "react-icons/fa";
+import { FaReact, FaNodeJs,FaBrain, FaPython } from "react-icons/fa";
 import {
-  SiTailwindcss, SiRedux, SiMongodb, SiFastapi, SiOpenai, SiPostgresql,
+  SiTailwindcss, SiRedux, SiMongodb, SiFastapi,SiPostgresql,
   SiExpress, SiNestjs, SiNextdotjs, SiTypescript, SiSocketdotio, SiRedis,
-  SiDocker, SiKubernetes, SiLangchain, SiSupabase, SiTwilio,
+  SiDocker, SiKubernetes, SiLangchain, SiSupabase,
   SiSap, SiGraphql, SiPrisma,
 } from "react-icons/si";
 
@@ -83,7 +83,7 @@ const techIcons = {
   "Python": <FaPython className="text-yellow-400" />,
   "FastAPI": <SiFastapi className="text-teal-400" />,
   "MongoDB": <SiMongodb className="text-green-500" />,
-  "OpenAI API": <SiOpenai className="text-white" />,
+  "OpenAI API": <FaBrain className="text-white" />,
   "PostgreSQL": <SiPostgresql className="text-blue-400" />,
   "pgvector": <SiPostgresql className="text-blue-400" />,
   "Express.js": <SiExpress className="text-gray-400" />,
@@ -98,7 +98,6 @@ const techIcons = {
   "LangChain": <SiLangchain className="text-emerald-400" />,
   "Qdrant": <LuDatabase className="text-rose-500" />,
   "Supabase": <SiSupabase className="text-emerald-500" />,
-  "Twilio": <SiTwilio className="text-red-500" />,
   "SAP ERP": <SiSap className="text-sky-400" />,
   "GraphQL": <SiGraphql className="text-pink-400" />,
   "Prisma ORM": <SiPrisma className="text-white" />,
