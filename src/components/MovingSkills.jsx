@@ -7,11 +7,12 @@ import {
   // Databases
   SiPostgresql, SiMongodb, SiMysql, SiRedis, SiPrisma,
   // AI / GenAI
-  SiLangchain, SiOpenai, SiAnthropic, SiGooglegemini, SiQdrant,
+  SiLangchain, SiOpenai, SiAnthropic, SiGooglegemini,
   // DevOps & tools
   SiDocker, SiKubernetes, SiAmazon, SiGithubactions, SiGitlab, SiGit,
   SiJest, SiPlaywright, SiPostman, SiPython,
 } from "react-icons/si";
+import { LuDatabase } from "react-icons/lu";
 
 const skillsWithIcons = [
   // AI first, since it's the current focus
@@ -20,7 +21,7 @@ const skillsWithIcons = [
   { name: "OpenAI", icon: <SiOpenai /> },
   { name: "Claude", icon: <SiAnthropic /> },
   { name: "Gemini", icon: <SiGooglegemini /> },
-  { name: "Qdrant", icon: <SiQdrant /> },
+  { name: "Qdrant", icon: <LuDatabase /> },
   { name: "pgvector", icon: <SiPostgresql /> },
 
   { name: "React.js", icon: <SiReact /> },
