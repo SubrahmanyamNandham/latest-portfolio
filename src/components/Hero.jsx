@@ -68,7 +68,7 @@ const Hero = () => {
           </span>
         </h1>
         <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-          Full Stack Engineer with 2.5+ years building production web apps and AI-powered systems.
+          Software Engineer with 2.5+ years building production web apps and AI-powered systems.
           I work across React.js, Node.js, Python and PostgreSQL, and build agentic workflows with
           LLMs, RAG and LangGraph, with enterprise systems supporting{" "}
           <span className="text-white font-medium">100K+ concurrent users</span>.
