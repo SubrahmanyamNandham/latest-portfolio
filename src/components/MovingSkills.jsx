@@ -1,31 +1,57 @@
 import React from "react";
 import {
-  SiReact, SiRedux, SiJavascript, SiTypescript, SiTailwindcss, SiNextdotjs,
-  SiNodedotjs, SiExpress, SiPostgresql, SiMongodb, SiMysql, SiRedis,
-  SiDocker, SiKubernetes, SiGit, SiGithub, SiAmazon, SiPrisma, SiGraphql,
-  SiJest, SiPython,
+  // Languages & frontend
+  SiReact, SiRedux, SiJavascript, SiTypescript, SiTailwindcss, SiNextdotjs, SiMui,
+  // Backend
+  SiNodedotjs, SiExpress, SiNestjs, SiFastapi, SiGraphql, SiSocketdotio,
+  // Databases
+  SiPostgresql, SiMongodb, SiMysql, SiRedis, SiPrisma,
+  // AI / GenAI
+  SiLangchain, SiOpenai, SiAnthropic, SiGooglegemini, SiQdrant,
+  // DevOps & tools
+  SiDocker, SiKubernetes, SiAmazon, SiGithubactions, SiGitlab, SiGit,
+  SiJest, SiPlaywright, SiPostman, SiPython,
 } from "react-icons/si";
 
 const skillsWithIcons = [
+  // AI first, since it's the current focus
+  { name: "LangChain", icon: <SiLangchain /> },
+  { name: "LangGraph", icon: <SiLangchain /> },
+  { name: "OpenAI", icon: <SiOpenai /> },
+  { name: "Claude", icon: <SiAnthropic /> },
+  { name: "Gemini", icon: <SiGooglegemini /> },
+  { name: "Qdrant", icon: <SiQdrant /> },
+  { name: "pgvector", icon: <SiPostgresql /> },
+
   { name: "React.js", icon: <SiReact /> },
   { name: "TypeScript", icon: <SiTypescript /> },
   { name: "JavaScript", icon: <SiJavascript /> },
+  { name: "Python", icon: <SiPython /> },
   { name: "Node.js", icon: <SiNodedotjs /> },
+  { name: "NestJS", icon: <SiNestjs /> },
+  { name: "FastAPI", icon: <SiFastapi /> },
   { name: "Express.js", icon: <SiExpress /> },
   { name: "GraphQL", icon: <SiGraphql /> },
+  { name: "Socket.IO", icon: <SiSocketdotio /> },
   { name: "Next.js", icon: <SiNextdotjs /> },
   { name: "Redux", icon: <SiRedux /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+  { name: "Material UI", icon: <SiMui /> },
+
   { name: "PostgreSQL", icon: <SiPostgresql /> },
   { name: "MongoDB", icon: <SiMongodb /> },
   { name: "MySQL", icon: <SiMysql /> },
   { name: "Redis", icon: <SiRedis /> },
+  { name: "Prisma", icon: <SiPrisma /> },
+
   { name: "Docker", icon: <SiDocker /> },
   { name: "Kubernetes", icon: <SiKubernetes /> },
   { name: "AWS", icon: <SiAmazon /> },
-  { name: "Prisma", icon: <SiPrisma /> },
+  { name: "GitHub Actions", icon: <SiGithubactions /> },
+  { name: "GitLab CI/CD", icon: <SiGitlab /> },
   { name: "Jest", icon: <SiJest /> },
-  { name: "Python", icon: <SiPython /> },
+  { name: "Playwright", icon: <SiPlaywright /> },
+  { name: "Postman", icon: <SiPostman /> },
   { name: "Git", icon: <SiGit /> },
 ];
 
@@ -50,7 +76,7 @@ const MovingSkills = () => {
         }
         .animate-marquee {
           display: inline-flex;
-          animation: marquee 50s linear infinite;
+          animation: marquee 80s linear infinite;
         }
       `}</style>
     </div>
