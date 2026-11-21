@@ -1,5 +1,14 @@
 import profileImg from "../assets/profile.jpg";
 
+const stats = [
+  ["2.5+", "Years Experience"],
+  ["100K+", "Concurrent Users Supported"],
+  ["40%", "Faster Frontend Load"],
+  ["3+", "Agentic AI Projects"],
+];
+
+const skills = ["React.js", "Node.js", "TypeScript", "Python", "LangGraph", "RAG", "PostgreSQL"];
+
 const Hero = () => {
   return (
     <section
@@ -24,19 +33,19 @@ const Hero = () => {
         </div>
 
         <nav className="hidden sm:flex gap-8 text-sm text-gray-400">
-          {["home","about","projects","contact"].map(s => (
+          {["home", "about", "projects", "contact"].map((s) => (
             <a key={s} href={`#${s}`}
               className="hover:text-[#3b82f6] transition capitalize tracking-wide">{s}</a>
           ))}
         </nav>
 
-        <button className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-full text-xs font-medium text-gray-300 bg-white/5 border border-white/10 hover:border-[#3b82f6]/50 transition">
+        <a href="#contact" className="hidden sm:flex items-center gap-2 px-4 py-2 rounded-full text-xs font-medium text-gray-300 bg-white/5 border border-white/10 hover:border-[#3b82f6]/50 transition">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
           </span>
           Open to Opportunities
-        </button>
+        </a>
       </header>
 
       {/* Profile */}
@@ -49,7 +58,9 @@ const Hero = () => {
 
       {/* Text */}
       <div className="relative z-10 max-w-3xl">
-        <p className="text-[#3b82f6] text-sm tracking-[0.3em] uppercase mb-3 font-medium">Full Stack Engineer</p>
+        <p className="text-[#3b82f6] text-sm tracking-[0.3em] uppercase mb-3 font-medium">
+          Full Stack Agentic AI Engineer
+        </p>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-white mb-4">
           Balasubrahmanyam<br />
           <span className="text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, #3b82f6 0%, #60a5fa 50%, #93c5fd 100%)' }}>
@@ -57,9 +68,20 @@ const Hero = () => {
           </span>
         </h1>
         <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-          Full Stack Engineer with 2.5+ years building scalable, high-performance applications.
-          Specialising in React.js, Node.js, PostgreSQL, NoSQL — and shipping systems that serve <span className="text-white font-medium">50K+ users</span>.
+          Full Stack Engineer with 2.5+ years building production web apps and AI-powered systems.
+          I work across React.js, Node.js, Python and PostgreSQL, and build agentic workflows with
+          LLMs, RAG and LangGraph, with enterprise systems supporting{" "}
+          <span className="text-white font-medium">100K+ concurrent users</span>.
         </p>
+
+        {/* Skill chips */}
+        <div className="mt-6 flex flex-wrap gap-2 justify-center">
+          {skills.map((s) => (
+            <span key={s} className="px-3 py-1 rounded-full text-xs text-gray-300 bg-white/5 border border-white/10">
+              {s}
+            </span>
+          ))}
+        </div>
 
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <a href="https://www.linkedin.com/in/balasubrahmanyam-nandham-859968155/" target="_blank" rel="noopener noreferrer"
@@ -67,14 +89,15 @@ const Hero = () => {
             Let's Connect
           </a>
           <a href="https://drive.google.com/file/d/1pOhEEkpOsJp7IZbo5nWFy4n0fVHyiM9P/view?usp=sharing"
+            target="_blank" rel="noopener noreferrer"
             className="px-7 py-3 rounded-full border border-white/15 text-gray-300 hover:border-[#3b82f6] hover:text-white text-sm font-semibold transition">
-           My Resume
+            My Resume
           </a>
         </div>
 
         {/* Stats */}
         <div className="mt-12 flex flex-wrap gap-6 sm:gap-12 justify-center text-center">
-          {[["2.5+", "Years Experience"], ["50K+", "Users Served"], ["40%", "Perf Gains"], ["3+", "Enterprise Integrations"]].map(([num, label]) => (
+          {stats.map(([num, label]) => (
             <div key={label}>
               <div className="text-2xl sm:text-3xl font-bold text-white">{num}</div>
               <div className="text-xs text-gray-500 mt-1 tracking-wide">{label}</div>
