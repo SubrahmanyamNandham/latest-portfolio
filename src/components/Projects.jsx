@@ -1,10 +1,10 @@
-import { LuGithub } from "react-icons/lu";
+import { LuGithub, LuDatabase } from "react-icons/lu";
 import { CiPlay1 } from "react-icons/ci";
 import { FaReact, FaNodeJs, FaPython } from "react-icons/fa";
 import {
   SiTailwindcss, SiRedux, SiMongodb, SiFastapi, SiOpenai, SiPostgresql,
   SiExpress, SiNestjs, SiNextdotjs, SiTypescript, SiSocketdotio, SiRedis,
-  SiDocker, SiKubernetes, SiLangchain, SiQdrant, SiSupabase, SiTwilio,
+  SiDocker, SiKubernetes, SiLangchain, SiSupabase, SiTwilio,
   SiSap, SiGraphql, SiPrisma,
 } from "react-icons/si";
 
@@ -96,7 +96,7 @@ const techIcons = {
   "Kubernetes": <SiKubernetes className="text-blue-500" />,
   "LangGraph": <SiLangchain className="text-emerald-400" />,
   "LangChain": <SiLangchain className="text-emerald-400" />,
-  "Qdrant": <SiQdrant className="text-rose-500" />,
+  "Qdrant": <LuDatabase className="text-rose-500" />,
   "Supabase": <SiSupabase className="text-emerald-500" />,
   "Twilio": <SiTwilio className="text-red-500" />,
   "SAP ERP": <SiSap className="text-sky-400" />,
