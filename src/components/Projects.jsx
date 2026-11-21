@@ -1,47 +1,78 @@
 import { LuGithub } from "react-icons/lu";
 import { CiPlay1 } from "react-icons/ci";
 import { FaReact, FaNodeJs, FaPython } from "react-icons/fa";
-import { SiTailwindcss, SiRedux, SiMongodb, SiFastapi, SiOpenai, SiPostgresql, SiExpress, SiJsonwebtokens, SiMaterialdesign } from "react-icons/si";
+import {
+  SiTailwindcss, SiRedux, SiMongodb, SiFastapi, SiOpenai, SiPostgresql,
+  SiExpress, SiNestjs, SiNextdotjs, SiTypescript, SiSocketdotio, SiRedis,
+  SiDocker, SiKubernetes, SiLangchain, SiQdrant, SiSupabase, SiTwilio,
+  SiSap, SiGraphql, SiPrisma,
+} from "react-icons/si";
 
 const projects = [
   {
-    title: "AI-Powered Travel Planning Platform",
-    description: "Generates end-to-end personalized travel itineraries based on user preferences, budget, and trip duration using OpenAI APIs with dynamic real-time recommendations.",
-    tech: ["Python", "FastAPI", "React.js", "MongoDB", "OpenAI API"],
+    title: "AI-Powered Recruiting Platform",
+    description:
+      "Agentic platform that discovers, evaluates, enriches, and ranks candidate profiles against job requirements. Combines LLM reasoning, tool calling, skill extraction, and vector search to give recruiters explainable candidate recommendations, with provenance, consent, and prompt-versioning built in.",
+    tech: ["LangGraph", "RAG", "NestJS", "React.js", "PostgreSQL", "pgvector", "Qdrant", "Redis"],
     github: "https://github.com/SubrahmanyamNandham",
     live: null,
     gradient: "from-blue-600/20 to-violet-600/20",
     accent: "#3b82f6",
-    badge: "AI / Full Stack",
+    badge: "Agentic AI · In Progress",
   },
   {
-    title: "Task Pilot – Project Management Tool",
-    description: "Full project management platform with JWT-based authentication, RBAC, task assignments, workflow tracking, and responsive dashboards for team visibility.",
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Material UI"],
-    github: "https://github.com/SubrahmanyamNandham",
-    live: null,
-    gradient: "from-violet-600/20 to-pink-600/20",
-    accent: "#8b5cf6",
-    badge: "Full Stack",
-  },
-  {
-    title: "MES-AP-COSEC HR Integration Pipeline",
-    description: "Cron-based data sync pipelines bridging SAP and COSEC HR systems, improving data consistency by 35% and eliminating manual reconciliation workflows.",
-    tech: ["Node.js", "PostgreSQL", "REST APIs", "GraphQL", "Prisma ORM"],
+    title: "Agentic AI for Outpatient Healthcare",
+    description:
+      "Agentic workflow system for outpatient care covering patient support, appointment scheduling, consultation documentation, and follow-ups. Turns consultation transcripts into structured clinical drafts, flags missing or inconsistent details, and keeps doctors in control with a human-in-the-loop review step before anything reaches patients.",
+    tech: ["Python", "FastAPI", "LangChain", "RAG", "React.js", "TypeScript", "Supabase", "Twilio"],
     github: "https://github.com/SubrahmanyamNandham",
     live: null,
     gradient: "from-emerald-600/20 to-teal-600/20",
     accent: "#10b981",
-    badge: "Enterprise",
+    badge: "Agentic AI / Healthcare",
   },
   {
-    title: "LMS & Snow Management",
-    description: "Architected and launched Learning Management and Snow Management solutions for AeroSimple, improving operational efficiency by 35% across aviation operations.",
-    tech: ["React.js", "Redux", "Node.js", "Prisma ORM", "PostgreSQL"],
+    title: "TravelMitra – AI Travel Planner",
+    description:
+      "Turns preferences, destination, budget, and duration into structured, personalized itineraries. Combines LLM reasoning with tool-based retrieval (Apify) and semantic search (Qdrant), served by a FastAPI backend with authentication and persistence.",
+    tech: ["Python", "FastAPI", "React.js", "OpenAI API", "RAG", "Qdrant", "Apify"],
     github: "https://github.com/SubrahmanyamNandham",
+    live: null,
+    gradient: "from-violet-600/20 to-pink-600/20",
+    accent: "#8b5cf6",
+    badge: "AI / Full Stack",
+  },
+  {
+    title: "Product Support Chat Platform",
+    description:
+      "Real-time support platform with product-specific conversations, persistent messaging, typing indicators, read receipts, and agent dashboards. Uses JWT authentication and RBAC for customer and support-agent workflows.",
+    tech: ["Next.js", "NestJS", "TypeScript", "MongoDB", "Socket.IO"],
+    github: "https://github.com/SubrahmanyamNandham",
+    live: null,
+    gradient: "from-cyan-600/20 to-blue-600/20",
+    accent: "#06b6d4",
+    badge: "Real-time",
+  },
+  {
+    title: "Fynd Forge MES Platform",
+    description:
+      "Enterprise Manufacturing Execution System connecting production workflows with SAP ERP and COSEC HR. Real-time shop-floor dashboards and event-driven syncs cut workflow turnaround by 30%, and PostgreSQL tuning cut API latency by 25%, supporting 100K+ concurrent users.",
+    tech: ["React.js", "Redux", "Node.js", "PostgreSQL", "GraphQL", "Prisma ORM", "SAP ERP", "Socket.IO"],
+    github: null,
     live: null,
     gradient: "from-orange-600/20 to-red-600/20",
     accent: "#f97316",
+    badge: "Enterprise",
+  },
+  {
+    title: "Airport Operations SaaS",
+    description:
+      "Cloud-based airport operations suite for 10K+ users, including shift management, handovers, LMS, snow management, and lease management. Cut initial load time by about 40% and API response times by about 30%, and added AI agent workflows to generate shift handover summaries.",
+    tech: ["React.js", "Redux", "Node.js", "PostgreSQL", "MongoDB", "Prisma ORM"],
+    github: null,
+    live: null,
+    gradient: "from-pink-600/20 to-orange-600/20",
+    accent: "#ec4899",
     badge: "Product",
   },
 ];
@@ -54,14 +85,27 @@ const techIcons = {
   "MongoDB": <SiMongodb className="text-green-500" />,
   "OpenAI API": <SiOpenai className="text-white" />,
   "PostgreSQL": <SiPostgresql className="text-blue-400" />,
+  "pgvector": <SiPostgresql className="text-blue-400" />,
   "Express.js": <SiExpress className="text-gray-400" />,
-  "JWT": <SiJsonwebtokens className="text-pink-400" />,
-  "Material UI": <SiMaterialdesign className="text-blue-400" />,
+  "NestJS": <SiNestjs className="text-red-500" />,
+  "Next.js": <SiNextdotjs className="text-white" />,
+  "TypeScript": <SiTypescript className="text-blue-500" />,
+  "Socket.IO": <SiSocketdotio className="text-white" />,
+  "Redis": <SiRedis className="text-red-500" />,
+  "Docker": <SiDocker className="text-sky-500" />,
+  "Kubernetes": <SiKubernetes className="text-blue-500" />,
+  "LangGraph": <SiLangchain className="text-emerald-400" />,
+  "LangChain": <SiLangchain className="text-emerald-400" />,
+  "Qdrant": <SiQdrant className="text-rose-500" />,
+  "Supabase": <SiSupabase className="text-emerald-500" />,
+  "Twilio": <SiTwilio className="text-red-500" />,
+  "SAP ERP": <SiSap className="text-sky-400" />,
+  "GraphQL": <SiGraphql className="text-pink-400" />,
+  "Prisma ORM": <SiPrisma className="text-white" />,
   "Redux": <SiRedux className="text-purple-400" />,
   "Tailwind CSS": <SiTailwindcss className="text-cyan-400" />,
-  "Prisma ORM": <span className="text-white text-xs font-bold">P</span>,
-  "GraphQL": <span className="text-pink-400 text-xs font-bold">GQL</span>,
-  "REST APIs": <span className="text-gray-400 text-xs">API</span>,
+  "RAG": <span className="text-emerald-400 text-xs font-bold">RAG</span>,
+  "Apify": <span className="text-blue-400 text-xs font-bold">A</span>,
 };
 
 const Projects = () => {
@@ -90,12 +134,14 @@ const Projects = () => {
                 <div className="flex gap-2">
                   {project.github && (
                     <a href={project.github} target="_blank" rel="noopener noreferrer"
+                      aria-label={`${project.title} on GitHub`}
                       className="p-2 rounded-lg border border-white/10 hover:border-white/30 text-gray-400 hover:text-white transition">
                       <LuGithub size={16} />
                     </a>
                   )}
                   {project.live && (
                     <a href={project.live} target="_blank" rel="noopener noreferrer"
+                      aria-label={`${project.title} live demo`}
                       className="p-2 rounded-lg border border-white/10 hover:border-white/30 text-gray-400 hover:text-white transition">
                       <CiPlay1 size={16} />
                     </a>
