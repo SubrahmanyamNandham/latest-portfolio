@@ -28,7 +28,6 @@ const skillsWithIcons = [
   { name: "LangChain", icon: <SiLangchain /> },
   { name: "LangGraph", icon: <SiLangchain /> },
   { name: "OpenAI", icon: <FaBrain /> },
-  { name: "Claude", icon: <SiAnthropic /> },
   { name: "Gemini", icon: <SiGooglegemini /> },
   { name: "Qdrant", icon: <LuDatabase /> },
   { name: "pgvector", icon: <SiPostgresql /> },
