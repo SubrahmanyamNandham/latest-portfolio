@@ -88,7 +88,7 @@ const Hero = () => {
             className="px-7 py-3 rounded-full bg-[#3b82f6] hover:bg-[#2563eb] text-white font-semibold text-sm transition shadow-lg shadow-blue-500/30">
             Let's Connect
           </a>
-          <a href="https://drive.google.com/file/d/1pOhEEkpOsJp7IZbo5nWFy4n0fVHyiM9P/view?usp=sharing"
+          <a href="https://drive.google.com/file/d/1HGSSvhY_7OC-w2CDl96f09vfSlm_rsWU/view?usp=sharing"
             target="_blank" rel="noopener noreferrer"
             className="px-7 py-3 rounded-full border border-white/15 text-gray-300 hover:border-[#3b82f6] hover:text-white text-sm font-semibold transition">
             My Resume
